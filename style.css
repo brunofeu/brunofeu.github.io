@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+
+body {
+    background-color: #edf2f4;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .name {
+    font-family: "Viaoda Libre", cursive;
+  }
+
+  .habilid-class {
+    font-size: 15px;
+  }
+
+  .picture {
+    border-radius: 100px;
+  }
+  .button{
+    color: #fff;  
+    background-color: #00afb9;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 5px 10px;
+  }
