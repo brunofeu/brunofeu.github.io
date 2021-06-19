@@ -1,34 +1,56 @@
 *{
   padding: 0;
   margin: 0;
+ 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+/* div { 
+  border: 2px solid green;
+} */
+
+
 
 body {
-  background-color: #edf2f4;
+  background-image: url('https://i1.wp.com/css-tricks.com/wp-content/uploads/2015/04/saturation.png');
+   background-size:contain;
   font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-weight: bold;
+
 }
 
 .head{
   padding: 30px;
-  display:inline-block;
-  
- 
+    
 }
 
 .name h1{ 
-  font-family: "Viaoda Libre", cursive, 'Courier New', Courier, monospace;
+  font-family: 'Viaoda Libre', cursive;
   font-size:50px;
   text-align: center;
   margin-top: 15px;
 
 }
 
+.head-picture{
+ text-align: center;
+}
+
+.about {
+ 
+  max-width: 400px;
+  text-align: center;  
+  margin: auto;
+  line-height: 30px;
+  padding-top: 25px
+ }
+
 .vision {
-  max-width: 80%;
-  text-align: left;
-  margin-left: 50px;
+  max-width: 800px;
+  text-align: center;
+  line-height: 20px;
+  margin:auto;
+  
 }
 
 .head-list {
@@ -36,51 +58,57 @@ body {
   margin-top: 20px;
 }
 
-.head-picture{
-  float: left;
+.relevant-links {
+  
+  padding: 20px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  
+}
+.image-links {
+  /* display: inline-flex ; */
+   /* margin-left: 30px; */
+   text-align: center;
+   margin-bottom: 50px;
+}
 
-margin-left: 100px;
+.gitgub{
+margin: 15px;
   
 }
 
-.about {
- 
-float: right;
-  max-width: 400px;
-  text-align: center;  
-  padding: 15px;
-  margin-top: 40px;
-  line-height: 30px;
- }
-
-.relevant-links {
-  text-align: center;
+.linkedin{
+  margin: 15px;
 }
 
-  .habilid-class li{
-    font-size: 15px;
-    margin-bottom: 15px;
-    margin-left: 50px;
+.habilid-class li{
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  
+}
+
+.habilid-class ol{
+  margin-left:15px;
+}
+
+.habilid-class h3{
+  margin: 40px
+}
+
+.picture {
+  border-radius: 100%;
+  width: 250px;
+  border: 5px solid white
+  
+}
+.button{
+  color: #fff;  
+  background-color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 10px;
     
-  }
+}
 
-  .habilid-class ol{
-    margin-left:15px;
-  }
-
-  .habilid-class h4{
-    margin: 40px
-  }
-
-  .picture {
-    border-radius: 100px;
-    
-  }
-  .button{
-    color: #fff;  
-    background-color: #00afb9;
-      text-decoration: none;
-      border-radius: 10px;
-      padding: 5px 10px;
-      
-  }
