@@ -6,79 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu portfólio Web</title>
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <ul>
-      <a class="button" href="#habilidades">Habilidades</a>
-      <a class="button" href="#outrasHabilidades">Outras Habilidades</a>
-      <a class="button" href="#links">Links Relevantes</a>
-    </ul>
+    <div class="head-list">
+      <ul>
+        <a class="button" href="#habilidades">Habilidades</a>
+        <a class="button" href="#outrasHabilidades">Outras Habilidades</a>
+        <a class="button" href="#links">Links Relevantes</a>
+      </ul>
+    </div>
 
-    <h1 class="name">Bruno Feu de Brito Santos</h1>
-    <a href="1592586909136.jpeg"
-      ><img
-        src="1592586909136.jpeg"
-        alt="Foto de Bruno sorrindo"
-        width="150px"
-        class="picture"
-    /></a>
-    <p>
-      Estudande de Desenvolvimento Web na Trybe | Scrum Master | PSM-I™
-      <br />Engenheiro e <strong>apaixonado por tecnologia</strong>.
-    </p>
-    <p>
-      Na minha visão, o futuro da sociedade será baseado na tecnologia, por este
-      motivo meu objetivo é me tornar desenvolvedor para poder
-      <strong>mudar a vida das pessoas</strong>. <br /><br /><strong
-        ><em>Brasileiro de São Paulo/SP</em></strong
-      >
-    </p>
+    <div class="name">
+      <h1>Bruno Feu de Brito Santos</h1>
+    </div>
 
-    <h4 id="habilidades">Dentre minhas habilidades estão:</h4>
+    <div class="head">
+      <div class="head-picture">
+        <a href="1592586909136.jpeg"
+          ><img
+            src="1592586909136.jpeg"
+            alt="Foto de Bruno sorrindo"
+            class="picture"
+        /></a>
+      </div>
+      <div class="about">
+        <p>
+          Estudande de Desenvolvimento Web na Trybe Scrum Master | PSM-I™
+          <br />Engenheiro e <strong>apaixonado por tecnologia</strong>.
+        </p>
+      </div>
+    </div>
 
-    <ul class="habilid-class">
-      <li>Honestidade</li>
-      <br />
-      <li>Sinceridade</li>
-      <br />
-      <li>Competitividade</li>
-      <br />
-      <li>Praticidade</li>
-      <br />
-      <li>Resiliência</li>
-      <br />
-      <li>Ambição</li>
-      <br />
-      <li>Pensamento crítico</li>
-      <br />
-    </ul>
+    <div class="vision">
+      <p>
+        Na minha visão, o futuro da sociedade será baseado na tecnologia, por
+        este motivo meu objetivo é me tornar desenvolvedor para poder
+        <strong>mudar a vida das pessoas</strong>. <br /><br /><strong
+          ><em>Brasileiro de São Paulo/SP</em></strong
+        >
+      </p>
+    </div>
+    <div class="habilid-class">
+      <h3 id="habilidades">Habilidades:</h4>
 
-    <h4 id="outrasHabilidades">Outras habilidades:</h4>
+      <ol>
+        <li>Unix</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Metodologia Ágil</li>
+      </ol>
 
-    <ol class="habilid-class">
-      <li>Unix</li>
-      <br />
-      <li>Git</li>
-      <br />
-      <li>GitHub</li>
-      <br />
-      <li>HTML</li>
-      <br />
-      <li>Slack</li>
-      <br />
-      <li>Zoom</li>
-      <br />
-    </ol>
+      <h3 id="outrasHabilidades">Outras Habilidades:</h4>
 
-    <h4 id="links">Links relevantes</h4>
+      <ul>
+        <li>Honestidade</li>
+        <li>Sinceridade</li>
+        <li>Competitividade</li>
+        <li>Praticidade</li>
+        <li>Resiliência</li>
+        <li>Ambição</li>
+        <li>Pensamento crítico</li>
+      </ul>
+    </div>
 
-    <a href="https://github.com/brunofeu" target="_blank"
-      ><img src="github.png" alt="" width="80px"
-    /></a>
-    <a href="https://www.linkedin.com/in/brunofeu/" target="_blank"
-      ><img src="linkedin.png" alt="" width="50px"
-    /></a>
-    <br /><br />
+    <div class="relevant-links">
+      <h4 id="links">Links relevantes</h4>
+    </div>
+    <div class="image-links">
+      <span class="github">
+      <a href="https://github.com/brunofeu" target="_blank"
+        ><img src="github-white.png" alt="" width="80px"
+      /></a>
+      </span>
+    <span class="linkedin">
+      <a href="https://www.linkedin.com/in/brunofeu/" target="_blank"
+        ><img src="linkedin.png" alt="" width="80px"
+      /></a>
+    </span>
+  </div>
+    
   </body>
 </html>
