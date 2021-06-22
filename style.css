@@ -12,10 +12,10 @@
 
 
 body {
-  background-image: url('https://i1.wp.com/css-tricks.com/wp-content/uploads/2015/04/saturation.png');
+  background-color: #9C8484;
    background-size:contain;
   font-family: "Courier New", Courier, monospace;
-  color: white;
+  color: #FFF;
   font-size: 20px;
   
 
@@ -36,6 +36,7 @@ body {
 
 .head-picture{
  text-align: center;
+ height: 270px;
 }
 
 .about {
@@ -56,59 +57,54 @@ body {
 }
 
 .head-list {
+ 
   text-align: center;
   margin-top: 20px;
-}
+  
+ 
+  }
 
+  .head-list li{
+    display: inline-block;
+    width: auto;
+    width: 210px;
+  }
 
+  .button:hover{
+    zoom: 105%;
+    color: yellow;
+  }
 
 .contact-links {
   
-  padding: 20px;
+  padding: 15px;
   font-size: 20px;
-  line-height: 50px;
+  line-height: 30px;
   text-align: center;
+  margin-top: 50px;
   
 }
 .image-links {
    margin-bottom: 50px;
   text-align: center;
-
 }
 
+.button-links li{
+  display: inline-block;
+  width: 80px;
+  margin: 15px;
+}
 
-.github{
- height: 80px;
+.social-link{
+ height: 60px;
  vertical-align: top;
- padding: 20px;
   }
 
-.github:hover{
-  zoom: 125%;
-  
-}
 
-.linkedin{
-  height: 78px;
-  vertical-align: top;
-  padding: 20px;
-    
-}
 
-.linkedin:hover{
-  zoom:125%;
+.social-link:hover{
+  zoom:115%;
 }
-
-.instagram{
-  height: 85px;
-  vertical-align: top;
-  padding: 20px;
-}
-
-.instagram:hover{
-  zoom:125%;
-}
-
 
 .habilid-class li{
   
@@ -128,10 +124,10 @@ body {
 .picture {
   border-radius: 100%;
   width: 250px;
-  border: 5px solid white;
+  border: 5px solid #FFE8DF;
 }
 
-.picture:hover{
+.picture:hover {
   zoom:105%;
   
 }
@@ -146,7 +142,6 @@ body {
     
 }
 
-.button:hover {
-  color: yellow;  
-  zoom: 110%;
+.text{
+  padding-left: 100px;
 }
