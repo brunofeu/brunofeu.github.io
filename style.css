@@ -72,7 +72,7 @@ body {
 
   .button:hover{
     zoom: 105%;
-    color: yellow;
+    color: #90a2d4;
   }
 
 .contact-links {
@@ -129,6 +129,7 @@ body {
 
 .picture:hover {
   zoom:105%;
+  border-color: #90a2d4;
   
 }
 
