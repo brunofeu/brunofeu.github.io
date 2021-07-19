@@ -1,152 +1,177 @@
-*{
+* {
   padding: 0;
   margin: 0;
- 
+  font-size: 100%;
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
 }
-
-/* div { 
-  border: 2px solid green;
-} */
-
-
-
 
 body {
-  background-image: url('https://i1.wp.com/css-tricks.com/wp-content/uploads/2015/04/saturation.png');
-   background-size:contain;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  font-size: 20px;
-  
-
+  background-color: #589fd8;
 }
 
-.head{
-  padding: 30px;
-    
-}
-
-.name h1{ 
-  font-family: 'Viaoda Libre', cursive;
-  font-size:50px;
+.header {
+  background-color: rgb(65, 65, 65);
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  margin-top: 35px;
-
-}
-
-.head-picture{
- text-align: center;
-}
-
-.about {
- 
-  max-width: 400px;
-  text-align: center;  
+  width: 100%;
   margin: auto;
-  line-height: 30px;
-  padding-top: 25px
- }
-
-.vision {
-  max-width: 800px;
-  text-align: center;
-  line-height: 20px;
-  margin:auto;
+  padding: 20px;
+  align-items:center;
+  position: fixed;
+  top: 0;
+  left: 0;
   
+
+}
+
+.header h1 { 
+  font-size:40px;
+  font-family: "Viaoda Libre", cursive;
+  padding-left: 20px;
 }
 
 .head-list {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  margin-right: 8%;
 }
 
+.head-list div {
+  margin: 0 15px;
+}
 
+.name {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0 40px 0;
+}
 
-.contact-links {
-  
-  padding: 20px;
+.name h1 {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+.persona {
+  display: flex;
   font-size: 20px;
-  line-height: 50px;
-  text-align: center;
-  
 }
+
+.all-about {
+  /* border: 5px solid black; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.head-picture {
+  display: flex;
+  justify-content: center;
+
+  margin: 35px;
+  /* border: 5px solid black; */
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  line-height: 30px;
+  width: 80%;
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  max-width: 800px;
+  text-align: center;
+  line-height: 30px;
+  /* margin: auto; */
+  /* border: 5px solid black; */
+}
+
+.main-section {
+  /* border: 5px solid black; */
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  align-items: baseline;
+  padding: 50px 0;
+  font-size: 20px;
+}
+
+.habilidades-list li {
+  text-align: center;
+  /* margin-bottom: 15px; */
+  /* margin-left: 50px; */
+}
+.outrasHabilidades-list li {
+  text-align: center;
+}
+
+.habilidades-list h3,
+.outrasHabilidades-list h3 {
+  font-size: 1.5em;
+  padding: 1.5em;
+  /* margin: 40px; */
+}
+
+.footer {
+  background-color: rgb(65, 65, 65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.social {
+  display: flex;
+  padding: 30px;
+}
+.contact-links {
+  font-size: 25px;
+}
+
+.social a {
+  padding: 30px;
+  font-size: 50px;
+}
+
 .image-links {
-   margin-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
-
 }
 
-
-.github{
- height: 80px;
- vertical-align: top;
- padding: 20px;
-  }
-
-.github:hover{
-  zoom: 125%;
-  
-}
-
-.linkedin{
-  height: 78px;
-  vertical-align: top;
-  padding: 20px;
-    
-}
-
-.linkedin:hover{
-  zoom:125%;
-}
-
-.instagram{
-  height: 85px;
-  vertical-align: top;
-  padding: 20px;
-}
-
-.instagram:hover{
-  zoom:125%;
-}
-
-
-.habilid-class li{
-  
-  margin-bottom: 15px;
-  margin-left: 50px;
-  
-}
-
-.habilid-class ol{
-  margin-left:15px;
-}
-
-.habilid-class h3{
-  margin: 40px
+.social a:hover {
+  zoom: 115%;
 }
 
 .picture {
   border-radius: 100%;
   width: 250px;
-  border: 5px solid white;
+  border: 5px solid #ffe8df;
 }
 
-.picture:hover{
-  zoom:105%;
-  
+.picture:hover {
+  zoom: 102%;
+  border-color: #90a2d4;
 }
 
-.button{
-  color: #fff;  
-  background-color: black;
+.button {
+  color: #fff;
   text-decoration: none;
-  border-radius: 10px;
   padding: 5px 10px;
-  font-size: 15px;
-    
+  font-size: 20px;
 }
 
 .button:hover {
-  color: yellow;  
-  zoom: 110%;
+  zoom: 105%;
+  color: #90a2d4;
 }
