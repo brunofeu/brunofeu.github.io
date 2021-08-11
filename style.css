@@ -3,175 +3,167 @@
   margin: 0;
   font-size: 100%;
   font-family: "Courier New", Courier, monospace;
-  color: #fff;
 }
 
 body {
-  background-color: #589fd8;
+  background-color: rgb(243, 243, 243);
+  max-width: 700px;
+  margin: auto;
 }
 
 .header {
   background-color: rgb(65, 65, 65);
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
   width: 100%;
-  margin: auto;
   padding: 20px;
-  align-items:center;
   position: fixed;
   top: 0;
   left: 0;
-  
-
+  opacity: 0.9;
 }
 
-.header h1 { 
-  font-size:40px;
+.title {
+  display: flex;
+  flex-grow: 1;
+}
+
+.header-content {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 30px;
   font-family: "Viaoda Libre", cursive;
   padding-left: 20px;
+  
+}
+.header a{
+  opacity: 0.8;
 }
 
 .head-list {
   display: flex;
-  margin-right: 8%;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 
-.head-list div {
-  margin: 0 15px;
+.head-list a {
+  font-size: 16px;
+  opacity: 0.8;
 }
 
-.name {
+.main-content {
   display: flex;
-  justify-content: center;
-  margin: 150px 0 40px 0;
-}
-
-.name h1 {
-  font-family: "Viaoda Libre", cursive;
-  font-size: 50px;
-  text-align: center;
+  flex-direction: column;
+  margin: 120px 0 40px 0;
 }
 
 .persona {
   display: flex;
-  font-size: 20px;
-}
-
-.all-about {
-  /* border: 5px solid black; */
-  display: flex;
   flex-direction: column;
-  width: 50%;
-}
-
-.head-picture {
-  display: flex;
-  justify-content: center;
-
-  margin: 35px;
-  /* border: 5px solid black; */
 }
 
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  line-height: 30px;
-  width: 80%;
+  margin-top: 50px;
+  width: 95%;
 }
 
-.vision {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  max-width: 800px;
-  text-align: center;
-  line-height: 30px;
-  /* margin: auto; */
-  /* border: 5px solid black; */
+h3 {
+  font-size: 1.5em;
+  color: rgb(94, 94, 250);
+}
+h1 {
+  font-size: 2.5em;
+}
+.about p {
+  font-size: 16px;
+  padding: 15px 0;
+  text-align: justify;
+}
+
+.about h3 {
+  padding-bottom: 15px;
 }
 
 .main-section {
-  /* border: 5px solid black; */
-  display: flex;
-  justify-content: space-around;
+  /* margin-top: 80px; */
   width: 80%;
-  margin: auto;
-  align-items: baseline;
-  padding: 50px 0;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.main-section h3 {
+  margin: 20px 0;
 }
 
 .habilidades-list li {
-  text-align: center;
-  /* margin-bottom: 15px; */
-  /* margin-left: 50px; */
-}
-.outrasHabilidades-list li {
-  text-align: center;
+  line-height: 25px;
+  margin-left: 30px;
 }
 
-.habilidades-list h3,
-.outrasHabilidades-list h3 {
-  font-size: 1.5em;
-  padding: 1.5em;
-  /* margin: 40px; */
+.habilidades-list ul {
+  margin-left: -10px;
 }
 
 .footer {
   background-color: rgb(65, 65, 65);
+  width: 100%;
+  position: absolute;
+  left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 30px;
+  color: white;
+}
+h4 {
+  font-size: 1.4em;
 }
 
 .social {
   display: flex;
   padding: 30px;
-}
-.contact-links {
-  font-size: 25px;
+  text-align: center;
+  justify-content: center;
 }
 
 .social a {
-  padding: 30px;
+  padding: 30px 30px 0 30px;
   font-size: 50px;
+  text-decoration: none;
+  width: 100px;
+  color: white;
+  opacity: 0.8;
 }
 
-.image-links {
-  margin-bottom: 50px;
-  text-align: center;
+.social a p {
+  font-size: 16px;
 }
 
 .social a:hover {
-  zoom: 115%;
+  zoom: 103%;
+  opacity: 1;
 }
 
 .picture {
   border-radius: 100%;
-  width: 250px;
-  border: 5px solid #ffe8df;
+  width: 180px;
+  padding: 8px;
+  border: 5px solid rgb(94, 94, 250);
 }
 
 .picture:hover {
-  zoom: 102%;
-  border-color: #90a2d4;
+  border-color: rgb(154, 94, 250);
 }
 
 .button {
-  color: #fff;
   text-decoration: none;
-  padding: 5px 10px;
-  font-size: 20px;
+  color: white;
 }
 
 .button:hover {
-  zoom: 105%;
-  color: #90a2d4;
+  opacity: 1;
 }
