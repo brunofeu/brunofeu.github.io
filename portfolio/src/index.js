@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PortfolioProvider from './context/PortfolioProvider';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <PortfolioProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  </PortfolioProvider>,
   document.getElementById('root')
 );
 
