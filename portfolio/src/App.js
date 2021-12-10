@@ -1,28 +1,20 @@
+import { useContext, useState } from 'react';
 import './App.css';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+import PortfolioContext from './context/PortfolioContext';
+import profileImage from './images/IMG_9726.jpg'
 
 function App() {
+  const teste = useContext(PortfolioContext)
   return (
-  <div>
-    <header class="header">
-      <div class="header-content">
-        <div class="title">
-          <a class="button" href="#top">
-            <h1>Bruno Feu</h1>
-          </a>
-  
-        </div>
-        <nav class="head-list">
-          <div><a class="button" href="#habilidades">Habilidades</a></div>
-          <div><a class="button" href="#outrasHabilidades">Outras Habilidades</a></div>
-          <div><a class="button" href="#links">Contato</a></div>
-        </nav>
-      </div>
-    </header>
+  <main>
+    <Header/>
   
     <div class="main-content">
       <section class="persona">
         <div class="head-picture">
-          <a href="1592586909136.jpeg"><img src="1592586909136.jpeg" alt="Foto de Bruno" class="picture" /></a>
+          <a href="1592586909136.jpeg"><img src={profileImage} alt="Foto de Bruno" class="picture" /></a>
         </div>
   
         <div class="about">
@@ -74,35 +66,8 @@ function App() {
       </section>
   
     </div>
-    <footer class="footer">
-  
-  
-      <div class="contact-links">
-        <h4 id="links">Contato</h4>
-      </div>
-  
-      <section class="social">
-  
-        <a href="https://github.com/brunofeu" target="_blank"><i class="fab fa-github"></i>
-          <p>GitHub</p>
-        </a>
-  
-  
-  
-        <a href="https://www.linkedin.com/in/brunofeu/" target="_blank"><i class="fab fa-linkedin"></i>
-          <p>LinkedIn</p>
-        </a>
-  
-  
-        <a href="instagram.com/brunofeu" target="_blank"><i class="fab fa-instagram"></i>
-          <p>Instagram</p>
-        </a>
-  
-  
-      </section>
-  
-    </footer>
-  </div>
+    <Footer/>
+  </main>
   );
 }
 
