@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <header className=" flex justify-between py-5 m-auto items-center ">
+    <header className=" flex justify-between py-5 m-auto items-center mb-10">
       <h1 className="text-4xl">
         Bruno Feu
       </h1>
