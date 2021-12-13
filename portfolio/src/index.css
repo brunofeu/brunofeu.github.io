@@ -33,15 +33,6 @@ body {
 }
 
 
-/* 
-h3 {
-  font-size: 1.5em;
-  color: rgb(94, 94, 250);
-} */
-
-
-
-
 .habilidades-list li {
   line-height: 25px;
   margin-left: 30px;
@@ -50,19 +41,6 @@ h3 {
 .habilidades-list ul {
   margin-left: -10px;
 }
-
-.footer {
-  background-color: rgb(49, 49, 49);
-  width: 100%;
-  position: absolute;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  color: white;
-}
-
 
 .social {
   display: flex;
