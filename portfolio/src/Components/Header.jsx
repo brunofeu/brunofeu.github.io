@@ -2,11 +2,14 @@ import React from 'react'
 
 function Header() {
   return (
-    <header class="header">
-      <nav class="head-list">
-        <a class="button" href="#habilidades">Home</a>
-        <a class="button" href="#outrasHabilidades">Sobre Mim</a>
-        <a class="button" href="#links">Projetos</a>
+    <header className=" flex justify-between py-5 m-auto items-center ">
+      <h1 className="text-4xl">
+        Bruno Feu
+      </h1>
+      <nav className="space-x-10">
+        <a className="" href="#habilidades">Home</a>
+        <a className="" href="#outrasHabilidades">Sobre Mim</a>
+        <a className="" href="#links">Projetos</a>
       </nav>
     </header>
   )

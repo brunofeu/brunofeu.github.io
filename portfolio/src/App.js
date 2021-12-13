@@ -8,16 +8,15 @@ import profileImage from './images/IMG_9726.jpg'
 function App() {
   const teste = useContext(PortfolioContext)
   return (
-  <main>
+  <main className="relative w-2/3 max-w-4xl m-auto">
     <Header/>
-  
-    <div class="main-content">
-      <section class="persona">
-        <div class="head-picture">
-          <a href="1592586909136.jpeg"><img src={profileImage} alt="Foto de Bruno" class="picture" /></a>
+    <div className="">
+      <section className="">
+        <div className="border-4 rounded-full border-indigo-400 h-60 w-60 ">
+          <img src={profileImage} alt="profile-picture" className="rounded-full border-4" />
         </div>
   
-        <div class="about">
+        <div className="">
           <h3>OLÁ,</h3>
           <h1>Eu sou Bruno.</h1>
           <p>
@@ -34,9 +33,9 @@ function App() {
   
       </section>
   
-      <section class="main-section">
+      <section className="main-section">
   
-        <div class="habilidades-list">
+        <div className="habilidades-list">
           <h3 id="habilidades">Habilidades</h3>
 
             <ol>
@@ -50,7 +49,7 @@ function App() {
               <li>Metodologia Ágil</li>
             </ol>
         </div>
-        <div class="habilidades-list">
+        <div className="habilidades-list">
           <h3 id="outrasHabilidades">Outras Habilidades</h3>
             <ul>
               <li>Honestidade</li>
