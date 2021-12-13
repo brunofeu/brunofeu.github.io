@@ -3,9 +3,9 @@ import React from 'react'
 function FooterLink({img, url, text}) {
   return (
     <div>
-      <a href={url} target="_blank"><i class="fab fa-github"></i>
-        <img src={ img } alt="logo-brand" />
-        <p>{text}</p>
+      <a href={url} target="_blank" className="flex flex-col items-center">
+        <img src={ img } alt="logo-brand" className="h-10 drop-shadow-lg  invert hover:animate-bounce"/>
+        <p className="pt-2">{text}</p>
       </a>
     </div>
   )

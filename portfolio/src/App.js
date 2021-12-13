@@ -33,33 +33,16 @@ function App() {
   
         <div className="habilidades-list">
           <h3 id="habilidades">Habilidades</h3>
-
             <ol>
-              <li>Unix</li>
-              <li>Git</li>
-              <li>GitHub</li>
               <li>HTML</li>
               <li>CSS</li>
-              <li>DOM</li>
-              <li>Flexbox</li>
-              <li>Metodologia Ágil</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Context API</li>
             </ol>
         </div>
-        <div className="habilidades-list">
-          <h3 id="outrasHabilidades">Outras Habilidades</h3>
-            <ul>
-              <li>Honestidade</li>
-              <li>Sinceridade</li>
-              <li>Competitividade</li>
-              <li>Praticidade</li>
-              <li>Resiliência</li>
-              <li>Ambição</li>
-              <li>Pensamento crítico</li>
-            </ul>
-        </div>
-  
       </section>
-  
     </div>
     <Footer/>
   </main>
