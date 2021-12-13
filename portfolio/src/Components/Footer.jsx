@@ -7,9 +7,9 @@ import email_logo from '../images/envelope-square-solid.svg'
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center bg-gray-300 absolute w-screen p-5">
+    <footer className="flex flex-col items-center bg-gray-300 absolute mt-10 w-screen p-5">
       <h4 id="links" className="text-3xl text-indigo-400 drop-shadow-xl">Contato</h4>
-      <div className="flex w-2/3 justify-around pt-5">
+      <div className="flex w-2/3 justify-around pt-5" id="contato">
         <FooterLink img={ github_logo } url="https://github.com/brunofeu" text="GitHub"/>
         <FooterLink img={ linkedin_logo } url="https://www.linkedin.com/in/brunofeu/" text="LinkedIn"/>
         <FooterLink img ={ instagram_logo } url="instagram.com/brunofeu" text="Instagram"/>

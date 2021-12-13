@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import './App.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+import Projects from './Components/Projects';
 import PortfolioContext from './context/PortfolioContext';
 import profileImage from './images/IMG_9726.jpg'
 
@@ -10,7 +11,7 @@ function App() {
   return (
   <main className="">
     <Header/>
-    <div className="w-2/3 max-w-4xl m-auto mt-32">
+    <div className="w-2/3 max-w-4xl m-auto mt-40">
       <section className="flex justify-between items-center">
         <div className="border-4 rounded-full border-indigo-400 ">
           <img src={profileImage} alt="profile-picture" className="rounded-full border-2 h-48 w-48 " />
@@ -66,6 +67,7 @@ function App() {
         </div>
       </section>
     </div>
+    <Projects/>
     <Footer/>
   </main>
   );

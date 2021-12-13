@@ -8,9 +8,10 @@ function Header() {
         Bruno Feu
       </h1>
       <nav className="space-x-10">
-        <a className=" text-white hover:underline hover:decoration-2 hover:decoration-white" href="#habilidades">Home</a>
+        <a className=" text-white hover:underline hover:decoration-2 hover:decoration-white" href="#top">Home</a>
         <a className=" text-white hover:underline hover:decoration-2 hover:decoration-white" href="#outrasHabilidades">Sobre Mim</a>
         <a className=" text-white hover:underline hover:decoration-2 hover:decoration-white" href="#links">Projetos</a>
+        <a className=" text-white hover:underline hover:decoration-2 hover:decoration-white" href="#contato">Contato</a>
       </nav>
       </div>
     </header>
