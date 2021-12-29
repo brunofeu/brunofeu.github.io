@@ -1,18 +1,22 @@
 import React from 'react'
 
 function Header() {
+
   return (
-    <header className="pt-6 md:pt-10 pb-5 z-40 border-b-2">
-      <div className="flex justify-between m-auto w-full md:w-11/12 xl:w-10/12 xl:max-w-4xl items-center">
-      <h1 className="text-3xl md:text-4xl xl:text-5xl text-violet-800">
-        Bruno Feu
-      </h1>
-      <nav className=" dark:text-white flex space-x-3 md:space-x-10">
-        <a className=" hidden md:block hover:underline hover:decoration-2 hover:decoration-indigo-400" href="#top">Home</a>
-        <a className=" hover:underline hover:decoration-2 hover:decoration-indigo-400" href="#about">Sobre Mim</a>
-        <a className=" hover:underline hover:decoration-2 hover:decoration-indigo-400" href="#projects">Projetos</a>
-        <a className=" hover:underline hover:decoration-2 hover:decoration-indigo-400" href="#contato">Contato</a>
-      </nav>
+    <header className="header-container">
+      <div className="header-content">
+        <h1 className="header-text-name">
+          BRUNO FEU
+        </h1>
+        <div className="header-nav-btn" onClick={ (e) => e.target.classList.toggle('open')  }>
+          <div className="header-btn-burger" onClick={ (e) => e.target.parentNode.classList.toggle('open')  }></div>
+        </div>
+        {/* <nav className="header-nav">
+          <a className="header-nav-text" href="#top">Home</a>
+          <a className="header-nav-text" href="#about">Sobre Mim</a>
+          <a className="header-nav-text" href="#projects">Projetos</a>
+          <a className="header-nav-text" href="#contato">Contato</a>
+        </nav> */}
       </div>
     </header>
   )
