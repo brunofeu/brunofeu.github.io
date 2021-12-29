@@ -83,8 +83,10 @@ body.blockSiteScrolling {
 .header-nav-btn.open .header-btn-burger::before {
   transform: rotate(45deg) translate(19px, -19px); 
   box-shadow: 0 2px 3px rgba(255,101,47,.3);
+  background-color: #fff;
 }
 .header-nav-btn.open .header-btn-burger::after {
+  background-color: #fff;
   transform: rotate(-45deg) translate(19px, 19px);
   box-shadow: 0 2px 3px rgba(255,101,47,.3);
 }
@@ -98,7 +100,7 @@ body.blockSiteScrolling {
 .header-nav {
   /* dark:text-white flex space-x-3 md:space-x-10 */
   opacity: 0;
-  background-color: rgba(0,0,0,.85);
+  background-color: rgba(0,0,0,.95);
   width: 100%;
   height: 100%;
   display: flex;
@@ -109,7 +111,7 @@ body.blockSiteScrolling {
   align-items: center;
   padding-top: 30%;
   gap: 30px;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
   z-index: -1;
 }
 
@@ -118,11 +120,70 @@ body.blockSiteScrolling {
   z-index: 10;
 }
 
-
-
 .header-nav-text {
   color: rgb(255,101,47);
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  text-shadow: 1px 1px 8px rgba(255, 255, 255,.4);
 }
+
+/* MAIN */
+
+.main-container {
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.about-top-container {
+  display: flex;
+  padding: 0 5px 45px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-picture {
+  width: 110px;
+  height: 180px;
+  border-radius: 15px;
+  object-fit:cover;
+}
+
+.about-top-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-top-text h1 {
+  color: rgb(129, 140, 248);
+  text-shadow: 1px 1px 3px rgba(58, 58, 58,.4);
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-top-text p {
+  padding-top: 10px;
+}
+
+.about-quote {
+  padding: 0 30px 30px;
+}
+
+.main-text-area{
+  /* text-violet-800 xl:text-black xl:text-left xl:text-lg font-bold pt-10 pb-6 xl:py-10 */
+
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: rgb(129, 140, 248);
+  text-shadow: 1px 1px 3px rgba(58, 58, 58,.4);
+  padding-bottom: 20px;
+}
+
+.about-me-text {
+  text-align: justify;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
