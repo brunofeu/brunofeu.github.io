@@ -178,7 +178,7 @@ body.blockSiteScrolling {
   font-weight: 700;
   color: rgb(129, 140, 248);
   text-shadow: 1px 1px 3px rgba(58, 58, 58,.4);
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .about-me-text {
@@ -187,3 +187,21 @@ body.blockSiteScrolling {
   margin-bottom: 40px;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.projects-cards-container {
+display: flex;
+flex-direction: column;
+}
+
+.project-card {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 20px 0;
+  box-shadow: 1px 2px 3px rgba(58,58,58,.3);
+}
