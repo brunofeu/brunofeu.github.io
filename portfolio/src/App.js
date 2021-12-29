@@ -7,11 +7,10 @@ import PortfolioContext from './context/PortfolioContext';
 
 function App() {
   const [menuOpen] = useContext(PortfolioContext);
-  
+
   useEffect(() => {
-    const body = document.getElementsByTagName('body')[0]
-    menuOpen ? body.classList.add('blockSiteScrolling') : body.classList.remove('blockSiteScrolling')
-  }, [menuOpen])
+    document.body.classList.toggle('blockSiteScrolling', menuOpen);
+  },[menuOpen])
   
   return (
   <body className=" w-11/12 xl:w-2/3 m-auto">

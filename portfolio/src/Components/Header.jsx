@@ -4,9 +4,8 @@ import PortfolioContext from '../context/PortfolioContext';
 function Header() {
   const [menuOpen, setMenuOpen] = useContext(PortfolioContext)
 
-  const handleClick = (event) => {
-    event.classList.toggle('open')
-    !menuOpen ? setMenuOpen(true) : setMenuOpen(false)
+  const handleClick = () => {
+    setMenuOpen(!menuOpen)
   }
 
   return (
@@ -15,18 +14,18 @@ function Header() {
         <h1 className="header-text-name">
           BRUNO FEU
         </h1>
-        <div className="header-nav-btn" onClick={ (e) => handleClick(e.target)  }>
-          <div className="header-btn-burger" onClick={ (e) => handleClick(e.target.parentNode)  }></div>
+        <div className={`header-nav-btn ${menuOpen ? 'open' : '' } `} onClick={ handleClick }>
+          <div className="header-btn-burger" onClick={ handleClick }></div>
         </div>
-        {menuOpen && (
-          <nav className="header-nav">
-            <a className="header-nav-text" href="#top">Home</a>
-            <a className="header-nav-text" href="#about">Sobre Mim</a>
-            <a className="header-nav-text" href="#projects">Projetos</a>
-            <a className="header-nav-text" href="#contato">Contato</a>
+        {/* {menuOpen && ( */}
+          <nav className={`header-nav ${menuOpen ? 'open' : '' } `}>
+            <a className="header-nav-text" onClick={handleClick} href="#top">Home</a>
+            <a className="header-nav-text" onClick={handleClick} href="#about">Sobre Mim</a>
+            <a className="header-nav-text" onClick={handleClick} href="#projects">Projetos</a>
+            <a className="header-nav-text" onClick={handleClick} href="#contact">Contato</a>
         </nav>
-        )
-      }
+        {/* )
+      } */}
       </div>
     </header>
   )
