@@ -16,7 +16,7 @@ function Projects() {
       <div className="projects-cards-container">
         <Carousel controls={false} variant='dark' pause='hover'>
           {Object.values(projects).map((project) => (
-            <Carousel.Item interval={5000} >
+            <Carousel.Item interval={3800} >
               <ProjectCard project={project}/>
             </Carousel.Item>
             ))}
