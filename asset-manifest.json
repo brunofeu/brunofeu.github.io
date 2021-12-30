@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c99820d0.css",
-    "main.js": "/static/js/main.13d08c47.js",
+    "main.css": "/static/css/main.ee760b15.css",
+    "main.js": "/static/js/main.ae2e325b.js",
     "static/js/787.b9ec5bb0.chunk.js": "/static/js/787.b9ec5bb0.chunk.js",
     "static/media/starwars.png": "/static/media/starwars.41a32221a3000980413f.png",
     "static/media/recipeapp.png": "/static/media/recipeapp.d67b796aa3ebbc01e218.png",
@@ -11,12 +11,12 @@
     "static/media/envelope-square-solid.svg": "/static/media/envelope-square-solid.bcb187448eea33563fb58e7919f0c110.svg",
     "static/media/linkedin-brands.svg": "/static/media/linkedin-brands.f40410445e859153f9822ead79adc02e.svg",
     "index.html": "/index.html",
-    "main.c99820d0.css.map": "/static/css/main.c99820d0.css.map",
-    "main.13d08c47.js.map": "/static/js/main.13d08c47.js.map",
+    "main.ee760b15.css.map": "/static/css/main.ee760b15.css.map",
+    "main.ae2e325b.js.map": "/static/js/main.ae2e325b.js.map",
     "787.b9ec5bb0.chunk.js.map": "/static/js/787.b9ec5bb0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c99820d0.css",
-    "static/js/main.13d08c47.js"
+    "static/css/main.ee760b15.css",
+    "static/js/main.ae2e325b.js"
   ]
 }
