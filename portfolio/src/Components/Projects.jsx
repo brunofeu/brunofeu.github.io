@@ -10,11 +10,9 @@ const projects = {
 
 function Projects() {
   return (
-    <div id='projects' className="flex flex-col">
-      <div>
-        <h3 className="text-violet-800 xl:text-black text-center xl:text-left text-xl xl:text-lg font-bold pt-8 pb-6 xl:py-10">Projetos</h3>
-      </div>
-      <div className="flex flex-col m-1 xl:flex-row xl:justify-around ">
+    <div id='projects' className="projects-container">
+      <h3 className="main-text-area">PROJETOS</h3>
+      <div className="projects-cards-container">
         {Object.values(projects).map((project) => (<ProjectCard project={project}/>))}
       </div>
     </div>

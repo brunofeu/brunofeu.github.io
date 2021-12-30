@@ -9,7 +9,7 @@ ReactDOM.render(
   <PortfolioProvider>
     <React.StrictMode>
       <App />
-    </React.StrictMode>,
+    </React.StrictMode>
   </PortfolioProvider>,
   document.getElementById('root')
 );

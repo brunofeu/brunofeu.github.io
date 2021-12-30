@@ -8,17 +8,19 @@ import heart from '../images/heart.png'
 
 function Footer() {
   return (
-    <footer className="flex flex-col border-t-2 items-center mt-10 p-5 pb-0">
-      <h4 id="links" className="text-3xl text-violet-800 drop-shadow-xl">Contato</h4>
-      <div className="flex w-full md:w-3/4 justify-around pt-5" id="contato">
+    <footer className="footer-container">
+      <h3 id="contact" className="footer-main-text">CONTATO</h3>
+      <div className="footer-links-container">
         <FooterLink img={ github_logo } url="https://github.com/brunofeu" text="GitHub"/>
         <FooterLink img={ linkedin_logo } url="https://www.linkedin.com/in/brunofeu/" text="LinkedIn"/>
         <FooterLink img ={ instagram_logo } url="http://instagram.com/brunofeu" text="Instagram"/>
         <FooterLink img ={ email_logo } url="mailto:brunofeu89@gmail.com" text="Email"/>
       </div>
-      <div className="flex border-t 2 mt-10">
-        <p className="text-xs"> Construído com React, CSS Tailwind e</p>
-        <img className="h-3 pl-2" src={ heart } alt="heart" />
+      <div className="footer-developer-text">
+        <p> por <a href="https://github.com/brunofeu"><strong>Bruno Feu</strong></a> </p>
+        <p> Construído com React e
+          <img id="heart-img" src={ heart } alt="heart" />
+        </p>
       </div>
     </footer>
   )
