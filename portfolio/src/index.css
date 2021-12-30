@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@300&display=swap');
-
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 * {
   margin: 0;
@@ -19,13 +19,6 @@ body.blockSiteScrolling {
     overflow: hidden;
 }
 
-@media (min-width: 900px)
-{
-  body {
-    width: 900px;
-    margin: 0 auto;
-  }
-}
 
 .header-container {
   padding: 10px 0 10px;
@@ -212,15 +205,44 @@ body.blockSiteScrolling {
 
 .projects-cards-container {
   display: flex;
-  flex-direction: column;
+  height: 500px;
+  justify-content: center;
 }
 
 .project-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card img{
   border-radius: 10px;
   max-width: 100%;
   max-height: 300px;
   margin: 20px 0;
   box-shadow: 1px 2px 3px rgba(58,58,58,.3);
+}
+
+.project-card-description {
+  height: 150px;
+}
+
+.project-card-description h5 {
+  padding: 10px;
+}
+
+.card-btn-redirect {
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.card-btn-redirect img {
+  height: 40px;
+  border-radius: 0;
+  box-shadow: none;
+  filter: drop-shadow(1px 2px 2px rgba(0,0,0,.28));
 }
 
 /*FOOTER*/
@@ -288,4 +310,19 @@ body.blockSiteScrolling {
 
 .header-nav-social-links img{
   height: 1.5rem;
+}
+
+
+@media (min-width: 900px)
+{
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+
+    flex-direction: row;
+  }
+
 }
