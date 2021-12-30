@@ -13,11 +13,11 @@ function App() {
   },[menuOpen])
   
   return (
-  <body className=" w-11/12 xl:w-2/3 m-auto">
+  <div>
     <Header/>
     <Main/>
     <Footer/>
-  </body>
+  </div>
   );
 }
 
