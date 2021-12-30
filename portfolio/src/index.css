@@ -283,7 +283,7 @@ body.blockSiteScrolling {
   filter: invert();
   width: 50%;
   justify-content: space-around;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 .header-nav-social-links img{
   height: 1.5rem;
