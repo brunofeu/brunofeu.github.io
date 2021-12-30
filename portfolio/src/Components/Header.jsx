@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import PortfolioContext from '../context/PortfolioContext';
 import FooterLink from './FooterLink';
 import github_logo from '../images/github-brands.svg'

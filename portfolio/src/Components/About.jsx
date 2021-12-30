@@ -10,7 +10,7 @@ function About() {
         <div className="about-top-text">
           <h1>Olá! 👋</h1>
           <h1>Eu sou o Bruno</h1>
-          <p> Desenvolvedor Front-End, Egenheiro e <strong>apaixonado por tecnologia</strong>.</p>
+          <p> Desenvolvedor Front-End, Engenheiro e <strong>apaixonado por tecnologia</strong>.</p>
         </div>
       </section>
         <p className="about-quote"><em>“Seja curioso. Leia de tudo. Tente coisas novas. O que as pessoas chamam de inteligência se resume a curiosidade.”</em> — Aaron Swartz</p>
