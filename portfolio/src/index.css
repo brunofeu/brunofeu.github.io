@@ -16,6 +16,14 @@ body.blockSiteScrolling {
     overflow: hidden;
 }
 
+@media (min-width: 900px)
+{
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
 .header-container {
   padding: 10px 0 10px;
   border-bottom: 1px solid gray;
