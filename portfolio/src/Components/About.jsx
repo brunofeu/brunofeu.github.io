@@ -1,16 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import profileImage from '../images/IMG_9726.jpg'
-import {HideOn} from 'react-hide-on-scroll';
 
 function About() {
   const listenToScroll = () => {
-    let heightToHideFrom = 400;
-    const winScroll = document.body.scrollTop || 
-        document.documentElement.scrollTop;
-    if (winScroll > heightToHideFrom) { 
-      document.getElementById('about-quote').classList.remove('hide-text')
-    } else {
+    const heigthToHideQuote = 400;
+    const heigthToHideAbout = 800;
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    if (winScroll < heigthToHideQuote) { 
       document.getElementById('about-quote').classList.add('hide-text')
+    } else {
+      document.getElementById('about-quote').classList.remove('hide-text')
+    }  
+
+    if (winScroll < heigthToHideAbout) { 
+      document.getElementById('about-me-title').classList.add('hide-text')
+      document.getElementById('about-me-text').classList.add('hide-text')
+    } else {
+      document.getElementById('about-me-title').classList.remove('hide-text')
+      document.getElementById('about-me-text').classList.remove('hide-text')
     }  
   };
   
@@ -19,8 +26,6 @@ function About() {
       return () => 
         window.removeEventListener("scroll", listenToScroll); 
     }, [])
-
-
 
 
   return (
@@ -38,17 +43,21 @@ function About() {
           <p className="about-description"> Desenvolvedor Front-End, Engenheiro e <strong>apaixonado por tecnologia</strong>.</p>
         </div>
       </section>
-      <div className="hide">
+
+      <div className="quote-container">
         <p className="about-quote" id="about-quote"><em>“Seja curioso. Leia de tudo. Tente coisas novas. O que as pessoas chamam de inteligência se resume a curiosidade.”</em> — Aaron Swartz</p>
       </div>
-      <div className="about-me">
 
-        <h3 className="about-me-title">SOBRE MIM</h3>
-        <p className="about-me-text">
-          Eu sou o Bruno Feu, estudante de desenvolvimento web na Trybe. Desenvolvo sites com HTML, CSS e JavaScript. Possuo conhecimento em Git, React, Redux com React, Hooks, testes unitários e RTL, entre outras tecnologias.
-          <br/> Atualmente estou migrando para a área de desenvolvimento pois aqui finalmente encontrei algo que me da prazer em trabalhar todos os dias. Acredito que meu trabalho possa gerar um impacto positivo na vida das pessoas. É isso que busco à cada novo aprendizado e novo projeto.
+      <div className="about-me-container">
+        <h3 className="about-me-title" id="about-me-title">SOBRE MIM</h3>
+        <p className="about-me-text" id="about-me-text">
+          Meu nome é Bruno Feu, sou estudante de desenvolvimento web na Trybe. Desenvolvo sites com HTML, CSS e JavaScript. Possuo conhecimento em Git, React, Redux com React, Hooks, testes unitários e RTL, entre outras tecnologias.
+          <br />
+          <br /> 
+          Atualmente estou migrando para a área de desenvolvimento pois aqui finalmente encontrei algo que me da prazer em trabalhar todos os dias. Acredito que meu trabalho possa gerar um impacto positivo na vida das pessoas. É isso que busco à cada novo aprendizado e novo projeto.
         </p>
       </div>
+
     </div>
   )
 }

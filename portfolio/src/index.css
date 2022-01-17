@@ -191,7 +191,7 @@ body.blockSiteScrolling {
   color: rgb(15, 27, 97);
 }
 
-.hide {
+.quote-container {
   height: 400px;
 }
 
@@ -205,11 +205,21 @@ body.blockSiteScrolling {
   opacity: 0;
 }
 
-.about-me {
+.about-me-container {
   background-color: rgb(244, 249, 252);
 }
 
-.about-me-title{
+.about-me-container h3,
+.about-me-container p {
+  transition: all .5s linear .5s ; 
+}
+
+.about-me-container h3.hide-text,
+.about-me-container p.hide-text {
+  opacity: 0;
+}
+
+.about-me-title, .projects-title {
   font-size: 25px;
   font-weight: 700;
   color: rgb(15, 27, 97);
