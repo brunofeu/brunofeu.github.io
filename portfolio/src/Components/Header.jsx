@@ -1,16 +1,21 @@
 import React, { useContext } from 'react'
 import PortfolioContext from '../context/PortfolioContext';
 import FooterLink from './FooterLink';
-import github_logo from '../images/github-brands.svg'
-import instagram_logo from '../images/instagram-brands.svg'
-import linkedin_logo from '../images/linkedin-brands.svg'
-import email_logo from '../images/envelope-square-solid.svg'
+import github_logo from '../images/github-brands.svg';
+import instagram_logo from '../images/instagram-brands.svg';
+import linkedin_logo from '../images/linkedin-brands.svg';
+import email_logo from '../images/envelope-square-solid.svg';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useContext(PortfolioContext)
+  const navigate = useNavigate();
+  
 
-  const handleClick = () => {
-    setMenuOpen(!menuOpen)
+
+  const handleClick = async (event) => {
+    await setMenuOpen(!menuOpen)
+    navigate('/')
   }
 
   return (
