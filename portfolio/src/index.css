@@ -150,11 +150,11 @@ body.blockSiteScrolling {
 .about-container {
   display: flex;
   flex-direction: column;
-  /* padding: 0 5px 45px; */
+  padding-top: 20px;
   align-items: center;
   justify-content: space-around;
   background-color: rgb(244, 249, 252);
-  height: 95vh;
+  height: 90vh;
 }
 
 .about-picture {
@@ -168,29 +168,48 @@ body.blockSiteScrolling {
   border: 5px dashed rgb(170, 220, 236);
   border-radius: 150px;
   padding: 3px;
-
 }
 
 
 .about-text {
   display: flex;
   flex-direction: column;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
-.about-text h1 {
-  color: rgb(129, 140, 248);
-  text-shadow: 1px 1px 3px rgba(58, 58, 58,.4);
+.about-name {
+  padding: 20px 0;
+  font-size: 30px;
+  color: rgb(15, 27, 97);
+  /* text-shadow: 1px 1px 3px rgba(58, 58, 58,.4); */
   font-family: 'Raleway', sans-serif;
 }
 
-.about-text p {
+.about-description {
+  font-size: 19px;
   padding: 10px 10px 0;
+  color: rgb(15, 27, 97);
+}
+
+.hide {
+  height: 350px;
+/* 
+  width: 100px;
+  height: 100px;
+  background: red;
+  */
 }
 
 .about-quote {
-  padding: 0 30px 30px;
+  padding: 150px 30px;
+  
+  transition: all .5s linear .5s ; 
 }
+
+.about-quote.hide-text {
+  opacity: 0;
+}
+
 
 .main-text-area{
   /* text-violet-800 xl:text-black xl:text-left xl:text-lg font-bold pt-10 pb-6 xl:py-10 */
