@@ -97,7 +97,6 @@ body.blockSiteScrolling {
 }
 
 .header-nav-text {
-  /* hidden md:block hover:underline hover:decoration-2 hover:decoration-indigo-400 */
   text-decoration: none;
 }
 /*END ANIMATION*/
