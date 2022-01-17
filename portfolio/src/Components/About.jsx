@@ -3,8 +3,8 @@ import profileImage from '../images/IMG_9726.jpg'
 
 function About() {
   const listenToScroll = () => {
-    const heigthToHideQuote = 400;
-    const heigthToHideAbout = 800;
+    const heigthToHideQuote = 300;
+    const heigthToHideAbout = 750;
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     if (winScroll < heigthToHideQuote) { 
       document.getElementById('about-quote').classList.add('hide-text')
