@@ -192,40 +192,36 @@ body.blockSiteScrolling {
 }
 
 .hide {
-  height: 350px;
-/* 
-  width: 100px;
-  height: 100px;
-  background: red;
-  */
+  height: 400px;
 }
 
 .about-quote {
   padding: 150px 30px;
-  
   transition: all .5s linear .5s ; 
+  font-size: 18px;
 }
 
 .about-quote.hide-text {
   opacity: 0;
 }
 
+.about-me {
+  background-color: rgb(244, 249, 252);
+}
 
-.main-text-area{
-  /* text-violet-800 xl:text-black xl:text-left xl:text-lg font-bold pt-10 pb-6 xl:py-10 */
-  
-  font-size: 20px;
-  font-family: 'Raleway', sans-serif;
+.about-me-title{
+  font-size: 25px;
   font-weight: 700;
-  color: rgb(129, 140, 248);
-  text-shadow: 1px 1px 3px rgba(58, 58, 58,.4);
-  padding: 20px 0;
+  color: rgb(15, 27, 97);
+  padding: 30px;
 }
 
 .about-me-text {
   text-align: justify;
-  padding: 0 10px;
+  padding: 0 20px 60px;
   margin-bottom: 40px;
+  color: rgb(15, 27, 97);
+  font-size: 18px;
 }
 
 .projects-container {

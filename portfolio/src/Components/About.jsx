@@ -41,10 +41,14 @@ function About() {
       <div className="hide">
         <p className="about-quote" id="about-quote"><em>“Seja curioso. Leia de tudo. Tente coisas novas. O que as pessoas chamam de inteligência se resume a curiosidade.”</em> — Aaron Swartz</p>
       </div>
-        <h3 className=" main-text-area">SOBRE MIM</h3>
+      <div className="about-me">
+
+        <h3 className="about-me-title">SOBRE MIM</h3>
         <p className="about-me-text">
-        Atualmente, estou estudando desenvolvimento web na Trybe, uma escola que ensina a programar, a aprender e a trabalhar. Lá foi onde definitivamente encontrei algo que tenho prazer em fazer todos os dias. Gosto do que somos capazes de alcançar por meio do código. 
+          Eu sou o Bruno Feu, estudante de desenvolvimento web na Trybe. Desenvolvo sites com HTML, CSS e JavaScript. Possuo conhecimento em Git, React, Redux com React, Hooks, testes unitários e RTL, entre outras tecnologias.
+          <br/> Atualmente estou migrando para a área de desenvolvimento pois aqui finalmente encontrei algo que me da prazer em trabalhar todos os dias. Acredito que meu trabalho possa gerar um impacto positivo na vida das pessoas. É isso que busco à cada novo aprendizado e novo projeto.
         </p>
+      </div>
     </div>
   )
 }
