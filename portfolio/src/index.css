@@ -42,10 +42,6 @@ body.blockSiteScrolling {
   text-shadow: 0 1px 2px rgba(129, 140, 248,.8);
 }
 
-.teste {
-  color: white;
-}
-
 .header-nav-btn {
   display: flex;
   justify-content: center;
@@ -145,8 +141,6 @@ body.blockSiteScrolling {
 /* MAIN */
 
 .main-container {
-  /* width: 95%; */
-  /* margin: 60px auto; */
   text-align: center;
 }
 
@@ -158,6 +152,11 @@ body.blockSiteScrolling {
   justify-content: space-around;
   background-color: rgb(244, 249, 252);
   height: 90vh;
+}
+
+.name {
+  font-size: 40px;
+  font-family: 'Righteous';
 }
 
 .about-picture {
@@ -237,16 +236,14 @@ body.blockSiteScrolling {
   font-size: 18px;
 }
 
-.projects-container {
+.carousel {
+  display: none;
+}
+
+.projects-list {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-}
-
-.projects-cards-container {
-  /* display: flex; */
-  /* height: 500px; */
-  /* justify-content: center; */
 }
 
 .project-card {
@@ -274,16 +271,26 @@ body.blockSiteScrolling {
 }
 
 .project-card-description h5 {
-  padding: 10px;
+  padding: 0px;
+}
+
+.btn-redirect-container {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
 }
 
 .card-btn-redirect {
-  padding: 20px;
-  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  padding: 0px;
+  margin: 0px;
   font-size: 16px;
 }
 
+
 .card-btn-redirect img {
+  margin: 10px;
   height: 40px;
   border-radius: 0;
   box-shadow: none;
@@ -359,16 +366,187 @@ body.blockSiteScrolling {
 }
 
 
-/* @media (min-width: 900px)
+@media (min-width: 800px)
 {
-  body {
-    width: 900px;
-    margin: 0 auto;
+  .header-content {
+    justify-content: space-around;
+  }
+  .header-text-name {
+    font-size: 30px;
+  }
+
+  
+  .about-container {
+    padding-top: 0px;
+    padding: 10%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .about-picture {
+    height: 350px;
+    border-radius: 200px;
+  }
+  
+  .border-img {
+    border-radius: 200px;
+  }
+  
+  .name {
+    font-size: 70px;
+    font-family: 'Righteous';
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+  
+  .about-name {
+    padding: 20px 0;
+    font-size: 34px;
+    color: rgb(15, 27, 97);
+  }
+  
+  .about-description {
+    font-size: 20px;
+    padding: 10px 10px 0;
+    color: rgb(15, 27, 97);
+  }
+  
+  .quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-me-title, .projects-title {
+    font-size: 30px;
+  }
+  
+  .about-me-text {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+  }
+
+  .carousel {
+    display: block;
+  }
+  
+  .projects-cards-container {
+    width: 50%;
+    margin: auto;
   }
 
   .project-card {
-
-    flex-direction: row;
+    border-radius: 20px;
+    color: rgb(15, 27, 97);
+    margin: 0px;
+    justify-content: center;
+    box-shadow: none;
+    background-color: white;
+    height: 700px;
+  }
+  
+  .project-card img{
+    max-width: 100%;
+    max-height: 400px;
+    margin: 0px;
+  }
+  
+  .card-btn-redirect {
+    padding: 0px;
+    margin: 0px 0;
+    font-size: 16px;
+    text-decoration: none;
   }
 
-} */
+  .card-btn-redirect p {
+    font-family: 'Righteous';
+    color: black;
+  }
+
+  .card-btn-redirect:hover p {
+    color: orange;
+  }
+  
+  .card-btn-redirect img {
+    height: 40px;
+    filter: none;
+    filter: drop-shadow(1px 2px 2px rgba(0,0,0,.2));
+  }
+  
+  .btn-redirect-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-list {
+    display: none;
+  }
+
+  .project-card-description  {
+    width: 50%;
+  }
+
+  .project-card-description h5 {
+    padding: 10px;
+  }
+
+  .footer-container {
+    background-color: rgb(15, 27, 97);
+    border-top: none;
+    padding: 1.25rem 0 0 ;
+  }
+  
+  .footer-links-container {
+    width: 50%;
+  }
+  
+  .footer-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: invert();
+    text-decoration: none;
+    gap: 10px;
+  }
+  
+  .footer-link img {
+    height: 2.5rem;
+    filter: drop-shadow(1px 2px 2px rgba(255,255,255,.8));
+  }
+  
+  .footer-link p {
+    display: block;
+    font-family: 'Righteous';
+    font-size: 16px;
+  }
+  
+  .footer-developer-text {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 0px;
+  }
+  
+  .footer-developer-text p, .footer-developer-text a{
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .header-nav-social-links {
+    /* display: flex; */
+    filter: none;
+    width: 40%;
+    justify-content: space-around;
+    padding-bottom: 150px;
+  }
+  
+  .header-nav-social-links img{
+    height: 2rem;
+  }
+
+}

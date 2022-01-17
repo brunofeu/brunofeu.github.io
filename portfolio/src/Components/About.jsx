@@ -38,7 +38,7 @@ function About() {
         <div className="about-text">
           <h1 className="about-name">Olá, 👋 meu nome é 
             <br />
-            <strong>Bruno Feu</strong>
+            <strong className="name">Bruno Feu</strong>
           </h1>
           <p className="about-description"> Desenvolvedor Front-End, Engenheiro e <strong>apaixonado por tecnologia</strong>.</p>
         </div>
