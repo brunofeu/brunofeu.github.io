@@ -60,6 +60,10 @@ body.blockSiteScrolling {
   transition: all .3s ease-in-out;
 }
 
+.header-nav-btn:hover {
+  cursor: pointer;
+}
+
 .header-btn-burger::before,
 .header-btn-burger::after {
   content: '';
