@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PortfolioProvider from './context/PortfolioProvider';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <PortfolioProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <BrowserRouter>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>
   </PortfolioProvider>,
   document.getElementById('root')
 );

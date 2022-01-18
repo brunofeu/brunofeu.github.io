@@ -1,21 +1,27 @@
 import React from 'react'
 import github_logo from '../images/github-brands.svg'
-import url_logo from '../images/url.svg'
+import browser_logo from '../images/browser.svg'
 
 function ProjectCard({project}) {
+  const { image, githubURL, description, demoURL } = project;
+
   return (
     <div className="project-card ">
-        <a href={project[3]} target="_blank" rel="noreferrer" >
-          <img  src={project[0]} alt="" />
+        <a href={demoURL} target="_blank" rel="noreferrer" >
+          <img  src={image} alt="" />
         </a>
         <div className="project-card-description">
-          <h5>{project[2]}</h5>
-          <a className='card-btn-redirect' href={project[1]} target="_blank" rel="noreferrer" >
-            <img src={github_logo} alt="github-logo" />
-          </a>
-          <a className='card-btn-redirect' href={project[3]} target="_blank" rel="noreferrer" >
-            <img src={url_logo} alt="www-logo" />
-          </a>
+          <h5>{description}</h5>
+          <div className="btn-redirect-container">
+            <a className='card-btn-redirect' href={githubURL} target="_blank" rel="noreferrer" >
+              <img src={github_logo} alt="github-logo" />
+              <p>Github</p>
+            </a>
+            <a className='card-btn-redirect' href={demoURL} target="_blank" rel="noreferrer" >
+              <img src={browser_logo} alt="www-logo" />
+              <p>Demo</p>
+            </a>
+          </div>
         </div>
     </div>
   )
