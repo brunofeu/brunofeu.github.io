@@ -40,20 +40,21 @@ function About() {
             <br />
             <strong className="name">Bruno Feu</strong>
           </h1>
-          <p className="about-description"> Desenvolvedor Front-End, Engenheiro e <strong>apaixonado por tecnologia</strong>.</p>
+          <p className="about-description"> Desenvolvedor Web, Engenheiro e <strong>apaixonado por tecnologia</strong>.</p>
         </div>
       </section>
 
       <div className="quote-container">
-        <p className="about-quote" id="about-quote"><em>“Seja curioso. Leia de tudo. Tente coisas novas. O que as pessoas chamam de inteligência se resume a curiosidade.”</em> — Aaron Swartz</p>
+        <p className="about-quote" id="about-quote"><em>“A única maneira de fazer um ótimo trabalho é amar o que faz. Se você ainda não encontrou esse sentimento na carreira, continue procurando. Não se acomode.”</em> — Steve Jobs</p>
       </div>
 
       <div className="about-me-container">
         <h3 className="about-me-title" id="about-me-title">SOBRE MIM</h3>
         <p className="about-me-text" id="about-me-text">
-          Meu nome é Bruno Feu, sou estudante de desenvolvimento web na Trybe. Desenvolvo sites com HTML, CSS e JavaScript. Possuo conhecimento em Git, React, Redux com React, Hooks, testes unitários e RTL, entre outras tecnologias.
-          <br />
-          <br /> 
+          Meu nome é Bruno Feu, sou estudante de desenvolvimento web na Trybe. Desenvolvo sites com HTML, CSS , JavaScript e TypeScript. Possuo conhecimento em Git, React, Redux, Context API, Hooks, testes unitários e teste de integração, entre outras tecnologias.
+          <br /><br /> 
+          No momento, estou finalizando o módulo de Back-end, com conhecimentos em Docker, banco de dados realacionais, NodeJS, express, arquitetura de software MSC e REST.
+          <br /><br /> 
           Atualmente estou migrando para a área de desenvolvimento pois aqui finalmente encontrei algo que me da prazer em trabalhar todos os dias. Acredito que meu trabalho possa gerar um impacto positivo na vida das pessoas. É isso que busco à cada novo aprendizado e novo projeto.
         </p>
       </div>
