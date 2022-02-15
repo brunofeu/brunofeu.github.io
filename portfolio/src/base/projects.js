@@ -33,7 +33,7 @@ const projects = [
     'image': borderRadiusImg,
     'githubURL': 'https://github.com/brunofeu/Border-Radius-Previewer',
     'description': 'Border-Radius-Previewer',
-    'demoURL': 'https://brunofeu.github.io/Border-Radius-Previewer/',
+    'demoURL': 'https://brunofeu-border-radius-previewer.vercel.app/',
   },
 ];
 
