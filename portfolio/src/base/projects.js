@@ -2,7 +2,7 @@ import starwarsImg from '../images/starwars.png';
 import recipeAppImg from '../images/recipeapp.png';
 import bin2decImg from '../images/bin2dec.png';
 import borderRadiusImg from '../images/border-radius.png';
-
+import covidCasesImg from '../images/covid.png'
 // {
 //   'image': 
 //   'githubURL': 
@@ -11,6 +11,12 @@ import borderRadiusImg from '../images/border-radius.png';
 // },
 
 const projects = [
+  {
+  'image': covidCasesImg,
+  'githubURL': 'https://github.com/brunofeu/Challenge-Covid-Daily-Cases',
+  'description': 'Covid daily cases',
+  'demoURL': 'https://challenge-covid-cases.vercel.app/'
+},
   {
     'image': starwarsImg,
     'githubURL': 'https://github.com/brunofeu/starwars-planets-search', 
