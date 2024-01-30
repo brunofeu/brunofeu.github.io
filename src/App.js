@@ -1,22 +1,12 @@
-import { useContext, useEffect } from 'react';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
-import Main from './Components/Main';
-import PortfolioContext from './context/PortfolioContext';
+import Main from './Components/Main/Main';
 
 
 function App() {
-  const [menuOpen] = useContext(PortfolioContext);
-
-  useEffect(() => {
-    document.body.classList.toggle('blockSiteScrolling', menuOpen);
-  },[menuOpen])
-  
   return (
   <div>
-    <Header/>
+    {/* <Header/> */}
     <Main/>
-    <Footer/>
+    {/* <Footer/> */}
   </div>
   );
 }

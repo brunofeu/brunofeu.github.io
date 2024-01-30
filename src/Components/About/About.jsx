@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import profileImage from '../images/IMG_9726.jpg'
+// import profileImage from '../images/IMG_9726.jpg'
 
 function About() {
   const listenToScroll = () => {
@@ -33,7 +33,7 @@ function About() {
       <section className="about-container">
         <div className="border-img">
 
-        <img src={profileImage} alt="profile" className="about-picture" />
+        {/* <img src={profileImage} alt="profile" className="about-picture" /> */}
         </div>
         <div className="about-text">
           <h1 className="about-name">Olá, 👋 meu nome é 

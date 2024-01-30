@@ -1,0 +1,12 @@
+.social-media-icon-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: aqua;
+}
